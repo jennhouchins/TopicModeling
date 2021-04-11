@@ -253,15 +253,11 @@ k_metrics <- FindTopicsNumber(tweets_dtm,
                 verbose = FALSE,
                 libpath = NULL)
 
-FindTopicsNumber_plot(k_metrics)
-
 findingk <- searchK(docs, 
                     vocab, 
                     K = c(5:15),
                     data = meta, 
                     verbose=FALSE)
-
-plot(findingk)
 ```
 ]
 .panel[.panel-name[Topic Numbers Plot]
